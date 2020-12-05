@@ -1,0 +1,268 @@
+// main: ../style.less
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+.science-descr {
+  padding: 40px 0;
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .tdc-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      width: 50%;
+      padding-left: 30px;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      &-wrapper {
+        // height: 50%;
+        max-width: 1000px;
+
+        flex: 1;
+        border-radius: 10px;
+        color: #fff;
+        background: $semi-white;
+        box-shadow: 0 0 18px 4px rgba(255, 201, 201, 0.8);
+        &-info {
+          display: block;
+          padding: 10px;
+
+          .tdc-info-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+            padding: 10px 0;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background-color: #fff;
+              bottom: 0;
+              left: 0;
+            }
+          }
+
+          .tdc-info-description {
+            font-size: 17px;
+          }
+        }
+      }
+      &-demo {
+        // height: 50%;
+        padding-bottom: 20px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-brain {
+          position: relative;
+          max-width: 100%;
+          right: 0;
+          width: 420px;
+          height: 450px;
+
+          &:hover {
+            svg {
+              opacity: 0.5;
+            }
+          }
+
+          .tdc-brain-part {
+            position: absolute;
+            cursor: pointer;
+
+            svg {
+              width: 200px;
+              fill: white;
+              stroke: black;
+              transform: scale(1);
+              transition: all 0.5s;
+
+              path {
+                pointer-events: all;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash 2s linear forwards;
+              }
+            }
+
+            &:hover,
+            &.active {
+              svg {
+                transform: scale(1.2);
+                opacity: 1;
+                stroke: #fff;
+              }
+            }
+          }
+
+          .tdc-frontal-lobe {
+            top: 0;
+            left: 0;
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $frontal-lobe-bg-color;
+              }
+            }
+          }
+
+          .tdc-cerebellum {
+            top: 235px;
+            left: 215px;
+
+            svg {
+              width: 160px;
+            }
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $cerebellum-bg-color;
+              }
+            }
+          }
+
+          .tdc-occipital-lobe {
+            top: 100px;
+            left: 280px;
+
+            svg {
+              width: 140px;
+            }
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $occipital-lobe-bg-color;
+              }
+            }
+          }
+
+          .tdc-parietal-lobe {
+            top: 0;
+            left: 180px;
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $parietal-lobe-bg-color;
+              }
+            }
+          }
+
+          .tdc-temporal-lobe {
+            top: 140px;
+            left: 95px;
+
+            svg {
+              width: 220px;
+            }
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $temporal-lobe-bg-color;
+              }
+            }
+          }
+
+          .tdc-brain-stem {
+            top: 280px;
+            left: 180px;
+
+            svg {
+              width: 140px;
+            }
+
+            &:hover,
+            &.active {
+              svg {
+                fill: $brain-stem-bg-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      padding-right: 30px;
+      padding-bottom: 20px;
+      position: relative;
+      width: 50%;
+      height: 100%;
+      order: 0;
+      display: flex;
+      flex-wrap: wrap;
+      &-filter {
+        position: relative;
+        left: 0;
+        // width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding: 2px;
+          height: calc(100vh / 18.5);
+          border: 1px solid grey;
+          border-radius: 5px;
+          opacity: 0.3;
+          transition: all 0.2s;
+          box-sizing: border-box;
+          text-align: center;
+          transform: scale(1);
+          transform-origin: left;
+          p {
+            margin: 0;
+            line-height: 1.2;
+          }
+
+          &.active {
+            opacity: 1;
+            color: white;
+            border-color: transparent;
+            transform: scale(1.1);
+            z-index: 2;
+
+            &.frontal_lobe {
+              background: $frontal-lobe-bg-color;
+            }
+
+            &.temporal_lobe {
+              background: $temporal-lobe-bg-color;
+            }
+
+            &.occipital_lobe {
+              background: $occipital-lobe-bg-color;
+            }
+
+            &.cerebellum {
+              background: $cerebellum-bg-color;
+            }
+
+            &.parietal_lobe {
+              background: $parietal-lobe-bg-color;
+            }
+
+            &.brain_stem {
+              background: $brain-stem-bg-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

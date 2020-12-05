@@ -1,0 +1,70 @@
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+.science-main {
+  color: $black;
+  padding: 40px 0;
+  .science {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__descr {
+      width: 40%;
+      padding: 30px 0;
+      position: relative;
+      &:last-child {
+        width: 60%;
+        margin-top: 0;
+        padding-left: 30px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+        top: 0;
+        left: 0;
+      }
+      &-item {
+        margin-bottom: 30px;
+        h3.science-title {
+          font-size: 1.6rem;
+          line-height: 1.7;
+          margin-bottom: 30px;
+        }
+        h4.science-subtitle {
+          font-size: 1.2rem;
+          line-height: 1.4;
+          margin-bottom: 30px;
+        }
+        p.science-text {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+      }
+    }
+    &__illustration {
+      width: 60%;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      &:nth-child(3) {
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        img {
+          opacity: 0.7;
+        }
+      }
+      img {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

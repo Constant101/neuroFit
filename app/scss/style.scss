@@ -1,0 +1,76 @@
+@import 'vars';
+@import 'libs';
+@import 'pages/home/sections/header';
+@import 'pages/home/sections/intro';
+@import 'pages/Science/sections/intro';
+@import 'pages/Science/sections/main';
+@import 'pages/Science/sections/descr';
+@import 'pages/Tech/sections/intro';
+@import 'pages/Tech/sections/main';
+@import 'pages/Tech/sections/details';
+@import 'pages/Tech/sections/metodology';
+@import 'pages/Health/sections/intro';
+@import 'pages/Health/sections/details';
+@import 'pages/Health/sections/more';
+
+@import 'pages/home/sections/nav';
+@import 'pages/home/sections/burger';
+@import 'pages/home/sections/chapter';
+@import 'pages/home/sections/chapters';
+@import 'pages/home/sections/blog';
+@import 'pages/home/sections/footer';
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBMPlexSans';
+  font-size: 1rem;
+  color: $black;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: 'Roboto-Slab';
+}
+h3 {
+  font-size: 28px;
+  color: #395866;
+  margin-bottom: 15px;
+  position: relative;
+  padding-top: 40px;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import 'media';

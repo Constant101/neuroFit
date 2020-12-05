@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.chapters {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-purple {
+  background-color: #dfd2e9;
+  transition: 0.5s ease;
+  &:hover {
+    background-color: #e6dcee;
+  }
+}
+.block-pink {
+  background-color: #c9dee3;
+  transition: 0.8s ease;
+  &:hover {
+    background-color: #d3e4e9;
+  }
+}
+.block-red {
+  background-color: #e7dad2;
+  transition: 0.5s ease;
+  &:hover {
+    background-color: #ece1da;
+  }
+}
+.chapter__col {
+  width: 33.33%;
+  @media (max-width: 767px) {
+  }
+
+  @media (max-width: 565px) {
+  }
+}

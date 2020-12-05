@@ -1,0 +1,1103 @@
+@media (min-width: 1240px) {
+}
+@media (max-width: 1240px) {
+  .intro__inner {
+    margin: 20px 0 10px 0;
+    padding: 2rem 0 3rem 0;
+    .intro__content {
+      h2.intro__title {
+        font-size: 2.2rem;
+      }
+    }
+    .intro__image {
+      img {
+        width: 70%;
+      }
+    }
+  }
+  /*science*/
+  .science-descr {
+    .tdc-main {
+      flex-wrap: wrap;
+      &-right {
+        width: 100%;
+        &-filter {
+          &-item {
+            width: 33%;
+            padding: 3px;
+            line-height: calc(100vh / 21);
+          }
+        }
+      }
+      &-left {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .intro__inner {
+    margin: 20px 0 0 0;
+    padding: 2rem 0 2rem 0;
+    .intro__content {
+      h2.intro__title {
+        font-size: 2rem;
+      }
+      .intro__inner-subtitle {
+        font-size: 16px;
+        padding: 30px 10px 10px 0;
+      }
+      .intro__inner-links {
+        width: 200px;
+        padding: 10px 30px 10px 0;
+
+        flex-direction: column;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -10px;
+          width: 100%;
+          height: 2px;
+          background-color: $green;
+        }
+        &-item {
+          width: 100%;
+          .btn {
+            font-size: 1rem;
+            &:after {
+              position: absolute;
+              content: '';
+              display: block;
+              width: 15px;
+              height: 15px;
+              border-top: 2px solid $green;
+              border-left: 2px solid $green;
+              bottom: 0;
+              right: -45px;
+              transform: rotate(135deg);
+              transition: all 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+  .science-main {
+    .science {
+      .science__descr {
+        &-item {
+          margin-bottom: 15px;
+          h4.science-subtitle {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &__illustration {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .science-descr {
+    .tdc-main {
+      .tdc-main {
+        &-right {
+          &-filter {
+            &-item {
+              width: 25%;
+              padding: 10px;
+              line-height: calc(100vh / 25);
+              p {
+                font-size: 13px;
+              }
+              &.active {
+                opacity: 1;
+                color: white;
+                border-color: transparent;
+                transform: scale(1.04);
+              }
+            }
+          }
+          &-left {
+            .tdc-main-left-demo-brain .tdc-brain-part {
+              position: absolute;
+              cursor: pointer;
+
+              svg {
+                width: 200px;
+                fill: white;
+                stroke: black;
+                transform: scale(1);
+                transition: all 0.5s;
+
+                path {
+                  pointer-events: all;
+                  stroke-dasharray: 1000;
+                  stroke-dashoffset: 1000;
+                  animation: dash 2s linear forwards;
+                }
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  transform: scale(1.04);
+                  opacity: 1;
+                  stroke: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tech-main {
+      .tech {
+        &__descr {
+          &-item {
+            margin-bottom: 15px;
+            h4.tech-subtitle {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .tech-details {
+      .details {
+        flex-wrap: wrap;
+        &__left {
+          width: 100%;
+        }
+        &__right {
+          width: 100%;
+        }
+      }
+    }
+    .chapter__col {
+      .chapter {
+        overflow: hidden;
+        padding: 30px 40px;
+        transition: box-shadow 0.2s linear;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        .title {
+          position: relative;
+
+          h3 {
+            font-size: 30px;
+            color: $green;
+            font-weight: 700;
+            font-family: 'IBMPlexSans';
+          }
+        }
+      }
+    }
+    .blog {
+      .blog__inner {
+        .blog__content {
+          width: 50%;
+        }
+        .blog__image {
+          width: 50%;
+          img {
+            max-width: 100%;
+            position: relative;
+          }
+        }
+      }
+    }
+    .footer {
+      .container {
+        .footer__wrapper {
+          .footer__form-wrapper {
+            padding-right: 20px;
+          }
+          .footer__subscribe {
+            padding-left: 20px;
+            nav {
+              margin-bottom: 50px;
+            }
+            .subscribe__form-wrapper {
+              form.subscribe-form {
+                input {
+                  width: 100%;
+                }
+              }
+            }
+            .footer-info {
+              flex-direction: column;
+              &-wrapper {
+                display: flex;
+                width: 100%;
+                .footer-copyright {
+                  width: 70%;
+                  display: flex;
+                  align-items: center;
+                  small {
+                    color: $gray-light;
+                  }
+                }
+                .footer-logo {
+                  width: 30%;
+                  display: flex;
+                  align-items: center;
+
+                  svg {
+                    margin: 0 auto;
+                    position: relative;
+                    max-width: 80px;
+                    top: 0;
+                  }
+                }
+              }
+              .footer-social {
+                width: 100%;
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                a {
+                  display: flex;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    &__inner {
+      .blog__content {
+        margin-bottom: 30px;
+        &-text {
+          margin-bottom: 60px;
+        }
+      }
+      .blog__image {
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      .footer__wrapper {
+        .footer__subscribe {
+          width: 50%;
+
+          .subscribe__form-wrapper {
+            form.subscribe-form {
+              input {
+                width: 100%;
+              }
+            }
+          }
+          .footer-info {
+            .footer-copyright {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              small {
+                color: $gray-light;
+              }
+            }
+            .footer-logo {
+              width: 30%;
+              display: flex;
+              align-items: center;
+
+              svg {
+                position: relative;
+                max-width: 100px;
+                top: -5px;
+              }
+            }
+            .footer-social {
+              width: 100%;
+              padding: 10px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              a {
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-more {
+    .animated-list {
+      .list-wrapper {
+        flex-direction: column;
+        p {
+          width: 100%;
+          order: 0;
+          padding: 0;
+        }
+        img {
+          float: left;
+          order: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .intro__inner {
+    padding-top: 40px;
+
+    background-position: right 20px top 0;
+    .intro__content {
+      h2.intro__title {
+        font-size: 1.9rem;
+      }
+      .intro__inner-subtitle {
+        font-size: 14px;
+        padding: 30px 0px 10px 0;
+      }
+      .intro__inner-links {
+        min-width: 0;
+        flex-direction: column;
+      }
+    }
+  }
+  .chapter__col {
+    width: 100%;
+    .chapter {
+      overflow: hidden;
+      padding: 30px 40px;
+      transition: box-shadow 0.2s linear;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      .title {
+        position: relative;
+
+        h3 {
+          font-size: 30px;
+          color: $green;
+          font-weight: 700;
+          font-family: 'IBMPlexSans';
+        }
+      }
+    }
+  }
+  .science-main {
+    .science {
+      &__descr {
+        width: 100%;
+        &:last-child {
+          width: 100%;
+          order: 0;
+        }
+        &-item {
+          margin-bottom: 15px;
+          h4.science-subtitle {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &__illustration {
+        width: 100%;
+        padding-bottom: 20px;
+        &:nth-child(3) {
+          width: 100%;
+          order: 1;
+          display: flex;
+          align-items: flex-start;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: $black;
+          }
+          img {
+            opacity: 0.7;
+          }
+        }
+        img {
+          position: relative;
+          width: 100%;
+          max-width: 800px;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+  .health-details {
+    .details {
+      flex-wrap: wrap;
+
+      &__column {
+        width: 100%;
+        padding: 60px 0 20px 0;
+        &:first-child {
+          padding: 60px 0 20px 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .tech-main {
+    .tech {
+      &__descr {
+        width: 100%;
+        &-item {
+          margin-bottom: 15px;
+          padding-right: 0;
+          h4.tech-subtitle {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &__illustration {
+        width: 100%;
+        justify-content: center;
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  .tech-details {
+    .details {
+      flex-wrap: wrap;
+      .details__left {
+        width: 100%;
+        padding-right: 0;
+      }
+      .details__right {
+        width: 100%;
+        padding-left: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .tech-metodology {
+    .metodology {
+      flex-direction: column;
+
+      &__left {
+        width: 100%;
+        padding-right: 0;
+      }
+      &__right {
+        width: 100%;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      .footer__wrapper {
+        flex-wrap: wrap;
+        .footer__form-wrapper {
+          padding-right: 0;
+          width: 100%;
+          border: none;
+          padding-bottom: 20px;
+          border-bottom: 2px solid $golden;
+        }
+        .footer__subscribe {
+          padding-left: 0;
+          padding-top: 20px;
+          width: 100%;
+
+          .subscribe__form-wrapper {
+            form.subscribe-form {
+              input {
+                width: 100%;
+              }
+            }
+          }
+          .footer-info {
+            flex-direction: column;
+            &-wrapper {
+              display: flex;
+              width: 100%;
+              .footer-copyright {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                small {
+                  color: $gray-light;
+                }
+              }
+              .footer-logo {
+                width: 30%;
+                display: flex;
+                align-items: center;
+
+                svg {
+                  margin: 0 auto;
+                  position: relative;
+                  max-width: 80px;
+                  top: 0;
+                }
+              }
+            }
+            .footer-social {
+              width: 100%;
+              padding: 30px 0 15px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              a {
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .intro__inner {
+    flex-wrap: wrap;
+    background-position: right 20px top 0;
+    .intro__content {
+      padding-top: 100px;
+
+      width: 100%;
+      margin-bottom: 30px;
+      h2.intro__title {
+        font-size: 1.7rem;
+      }
+
+      .intro__inner-links {
+        min-width: 0;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+    }
+    .intro__image {
+      width: 100%;
+      align-items: flex-end;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .chapters-section {
+    .chapter__col {
+      .chapter__image {
+        margin: 120px 0 90px;
+      }
+    }
+  }
+  .science-descr {
+    .tdc-main {
+      .tdc-main {
+        &-right {
+          &-filter {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .blog {
+    min-height: auto;
+    &__inner {
+      .blog__content {
+        width: 100%;
+        &-text {
+          p {
+            display: none;
+          }
+        }
+        h4 {
+          font-size: 24px;
+        }
+      }
+      .blog__image {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .intro__inner {
+    .intro__image {
+      align-items: center;
+    }
+  }
+  .science-descr {
+    .tdc-main {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-left {
+        width: 100%;
+        padding-left: 30px;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        &-wrapper {
+          // height: 50%;
+          max-width: 1000px;
+
+          flex: 1;
+          border-radius: 10px;
+          color: #fff;
+          background: $semi-white;
+          box-shadow: 0 0 18px 4px rgba(255, 201, 201, 0.8);
+          &-info {
+            display: block;
+            padding: 10px;
+
+            .tdc-info-title {
+              font-size: 16px;
+              text-transform: uppercase;
+              position: relative;
+              padding: 10px 0;
+              &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                bottom: 0;
+                left: 0;
+              }
+            }
+
+            .tdc-info-description {
+              font-size: 17px;
+            }
+          }
+        }
+        &-demo {
+          // height: 50%;
+          padding-bottom: 20px;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &-brain {
+            position: relative;
+            max-width: 100%;
+            right: 0;
+            width: 420px;
+            height: 450px;
+
+            &:hover {
+              svg {
+                opacity: 0.5;
+              }
+            }
+
+            .tdc-brain-part {
+              position: absolute;
+              cursor: pointer;
+
+              svg {
+                width: 170px;
+                fill: white;
+                stroke: black;
+                transform: scale(1);
+                transition: all 0.5s;
+
+                path {
+                  pointer-events: all;
+                  stroke-dasharray: 1000;
+                  stroke-dashoffset: 1000;
+                  animation: dash 2s linear forwards;
+                }
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  transform: scale(1.04);
+                  opacity: 1;
+                  stroke: #fff;
+                }
+              }
+            }
+
+            .tdc-frontal-lobe {
+              top: 0;
+              left: 0;
+
+              &:hover,
+              &.active {
+                svg {
+                  fill: $frontal-lobe-bg-color;
+                }
+              }
+            }
+
+            .tdc-cerebellum {
+              top: 200px;
+              left: 200px;
+
+              svg {
+                width: 137px;
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  fill: $cerebellum-bg-color;
+                }
+              }
+            }
+
+            .tdc-occipital-lobe {
+              top: 85px;
+              left: 245px;
+
+              svg {
+                width: 123px;
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  fill: $occipital-lobe-bg-color;
+                }
+              }
+            }
+
+            .tdc-parietal-lobe {
+              top: 0;
+              left: 162px;
+              svg {
+                width: 170px;
+              }
+              &:hover,
+              &.active {
+                svg {
+                  fill: $parietal-lobe-bg-color;
+                }
+              }
+            }
+
+            .tdc-temporal-lobe {
+              top: 112px;
+              left: 77px;
+
+              svg {
+                width: 211px;
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  fill: $temporal-lobe-bg-color;
+                }
+              }
+            }
+
+            .tdc-brain-stem {
+              top: 238px;
+              left: 170px;
+
+              svg {
+                width: 130px;
+              }
+
+              &:hover,
+              &.active {
+                svg {
+                  fill: $brain-stem-bg-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-right {
+        display: none;
+      }
+    }
+  }
+  .chapters-section {
+    .chapter__col {
+      .chapter__image {
+        margin: 70px 0 60px;
+      }
+    }
+  }
+  .health-details {
+    .details {
+      flex-wrap: wrap;
+
+      &__column {
+        width: 100%;
+        padding: 60px 0 20px 0;
+        &-item {
+          img {
+            max-width: 100%;
+          }
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .intro__inner {
+    .intro__image {
+      width: 100%;
+      img {
+        width: 75%;
+      }
+    }
+  }
+  .science-descr {
+    .container {
+      padding: 0 1.6rem;
+      .tdc-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-left {
+          width: 100%;
+          padding-left: 20px;
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          &-wrapper {
+            // height: 50%;
+            max-width: 1000px;
+
+            flex: 1;
+            border-radius: 10px;
+            color: #fff;
+            background: $semi-white;
+            box-shadow: 0 0 18px 4px rgba(255, 201, 201, 0.8);
+            &-info {
+              display: block;
+              padding: 10px;
+
+              .tdc-info-title {
+                font-size: 16px;
+                text-transform: uppercase;
+                position: relative;
+                padding: 10px 0;
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #fff;
+                  bottom: 0;
+                  left: 0;
+                }
+              }
+
+              .tdc-info-description {
+                font-size: 17px;
+              }
+            }
+          }
+          &-demo {
+            // height: 50%;
+            padding-bottom: 20px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-brain {
+              position: relative;
+              max-width: 100%;
+              right: 0;
+              width: 300px;
+              height: 350px;
+
+              &:hover {
+                svg {
+                  opacity: 0.5;
+                }
+              }
+
+              .tdc-brain-part {
+                position: absolute;
+                cursor: pointer;
+
+                svg {
+                  width: 143px;
+                  fill: white;
+                  stroke: black;
+                  transform: scale(1);
+                  transition: all 0.5s;
+
+                  path {
+                    pointer-events: all;
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 1000;
+                    animation: dash 2s linear forwards;
+                  }
+                }
+
+                &:hover,
+                &.active {
+                  svg {
+                    transform: scale(1.04);
+                    opacity: 1;
+                    stroke: #fff;
+                  }
+                }
+              }
+
+              .tdc-frontal-lobe {
+                top: 0;
+                left: 0;
+
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $frontal-lobe-bg-color;
+                  }
+                }
+              }
+
+              .tdc-cerebellum {
+                top: 154px;
+                left: 158px;
+
+                svg {
+                  width: 110px;
+                }
+
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $cerebellum-bg-color;
+                  }
+                }
+              }
+
+              .tdc-occipital-lobe {
+                top: 71px;
+                left: 207px;
+
+                svg {
+                  width: 86px;
+                }
+
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $occipital-lobe-bg-color;
+                  }
+                }
+              }
+
+              .tdc-parietal-lobe {
+                top: 0;
+                left: 130px;
+                svg {
+                  width: 140px;
+                }
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $parietal-lobe-bg-color;
+                  }
+                }
+              }
+
+              .tdc-temporal-lobe {
+                top: 95px;
+                left: 71px;
+
+                svg {
+                  width: 154px;
+                }
+
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $temporal-lobe-bg-color;
+                  }
+                }
+              }
+
+              .tdc-brain-stem {
+                top: 187px;
+                left: 135px;
+
+                svg {
+                  width: 93px;
+                }
+
+                &:hover,
+                &.active {
+                  svg {
+                    fill: $brain-stem-bg-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &-right {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      .footer__wrapper {
+        .footer__form-wrapper {
+          .footer__form-inner {
+            li {
+              input,
+              textarea {
+                min-width: 200px;
+              }
+            }
+          }
+        }
+        .footer__subscribe {
+          padding-top: 20px;
+          width: 100%;
+
+          .subscribe__form-wrapper {
+            form.subscribe-form {
+              input {
+                width: 100%;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+}

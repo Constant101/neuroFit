@@ -1,0 +1,68 @@
+// main: ../style.less
+@import '../../../vars';
+@import '../../../fonts';
+.chapter__col {
+  .chapter {
+    overflow: hidden;
+    padding: 30px 40px;
+    transition: box-shadow 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    .title {
+      position: relative;
+
+      h3 {
+        font-size: 38px;
+        color: $green;
+        font-weight: 400;
+        font-family: 'Roboto-Slab';
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $green;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+    }
+
+    @media (max-width: 565px) {
+      margin: 0 auto;
+    }
+  }
+
+  .chapter__image {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 130px 0 110px;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .chapter__content {
+    padding: 1rem 0.8rem;
+  }
+
+  .chapter__title {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.06rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

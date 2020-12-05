@@ -1,0 +1,71 @@
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+.tech-main {
+  color: $black;
+  padding: 40px 0 10px 0;
+  min-height: 800px;
+  .tech {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: $black;
+    }
+    &__descr {
+      flex: 1;
+      width: 50%;
+      padding: 30px 0;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+        top: 0;
+        left: 0;
+      }
+      &-item {
+        margin-bottom: 30px;
+        h3.tech-title {
+          font-size: 1.6rem;
+          line-height: 1.7;
+          margin-bottom: 30px;
+          color: $green;
+        }
+        h4.tech-subtitle {
+          font-size: 1.2rem;
+          line-height: 1.4;
+          margin-bottom: 30px;
+        }
+        p.tech-text {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+      }
+    }
+    &__illustration {
+      flex: 1;
+      width: 50%;
+      // background: url(../img/structure.png) no-repeat center;
+      // background-size: 70%;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      img {
+        position: relative;
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

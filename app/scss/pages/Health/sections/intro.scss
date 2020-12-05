@@ -1,0 +1,49 @@
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+
+.intro-health {
+  background-color: $health;
+  overflow: hidden;
+}
+
+.intro__inner {
+  display: flex;
+  padding-top: 2rem;
+  padding: 2rem 0 3rem 0;
+  position: relative;
+  z-index: 2;
+
+  .intro__content {
+    width: 40%;
+    padding-top: 120px;
+    .intro__title {
+      // margin-bottom: 5px;
+      // font-size: 2.7rem;
+      // color: $green;
+      // font-weight: 700;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .intro__image {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      width: 60%;
+      position: relative;
+    }
+  }
+  &-subtitle {
+    z-index: 2;
+    padding: 30px 60px 60px 0;
+    // border-top: 2px solid $green;
+    color: $green;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}

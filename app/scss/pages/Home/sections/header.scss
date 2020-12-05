@@ -1,0 +1,28 @@
+.header {
+  padding: 30px 0;
+  position: relative;
+  background-color: none;
+  .logo {
+    z-index: 9999;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+}
+.header.show {
+  background-color: #fff;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

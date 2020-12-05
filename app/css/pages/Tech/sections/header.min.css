@@ -1,0 +1,1 @@
+.header{padding:1rem 0;position:relative;background-color:#f0f0f0}@media (max-width: 767px){.header{position:fixed;top:0;left:0;right:0;z-index:1000}}.header__inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}

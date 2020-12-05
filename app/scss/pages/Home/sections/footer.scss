@@ -1,0 +1,142 @@
+@import '../../../vars';
+
+.footer {
+  padding: 30px 0;
+  .container {
+    .footer__wrapper {
+      display: flex;
+      justify-content: space-between;
+      .footer__form-wrapper {
+        border-right: 2px solid $golden;
+        padding-right: 50px;
+        width: 50%;
+        span {
+          color: $golden;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        .footer__form {
+          &-inner {
+            padding: 20px 0 0 0;
+            margin: 0;
+            li {
+              list-style: none;
+              margin-top: 15px;
+              input,
+              textarea {
+                width: 100%;
+                min-width: 300px;
+                padding: 17px;
+                color: $golden;
+                resize: none;
+                outline: none;
+                font-size: 16px;
+                border: 1px solid $gray-light;
+                &::placeholder {
+                  color: $gray-light;
+                }
+              }
+              textarea {
+                min-height: 120px;
+              }
+            }
+          }
+        }
+      }
+      .footer__subscribe {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 50px;
+        nav {
+          float: right;
+          margin-bottom: 30px;
+          a {
+            color: $golden;
+          }
+          .nav__block {
+            display: flex;
+            align-items: flex-end;
+            .nav__link {
+              &::after {
+                background-color: $golden;
+              }
+            }
+          }
+        }
+        .subscribe__form-wrapper {
+          a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: $golden;
+          }
+          form.subscribe-form {
+            margin-bottom: 27px;
+
+            .subscribe-btn {
+              position: absolute;
+              content: '';
+              display: block;
+              width: 15px;
+              height: 15px;
+              border-top: 2px solid $green;
+              border-left: 2px solid$green;
+              bottom: 0;
+              right: -55px;
+              transform: rotate(135deg);
+              transition: all 0.2s linear;
+            }
+            input {
+              border: none;
+              border-bottom: 1px solid $gray-light;
+              width: 80%;
+              min-width: 200px;
+              padding: 30px 30px 30px 0;
+              outline: none;
+              color: $golden;
+              font-size: 16px;
+              letter-spacing: 1px;
+              position: relative;
+              &::placeholder {
+                color: $gray;
+              }
+            }
+          }
+        }
+        .footer-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+
+          .footer-copyright {
+            display: flex;
+            flex: 1;
+            small {
+              color: $gray-light;
+            }
+          }
+          .footer-logo {
+            width: 50%;
+            flex: 1;
+            justify-content: flex-end;
+            display: flex;
+            svg {
+              position: relative;
+              top: -10px;
+              max-width: 120px;
+            }
+          }
+          .footer-social {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
+}

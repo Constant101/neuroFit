@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+    <!-- Intro -->
+<section class="intro-tech">
+    <header class="header">
+      <div class="container">
+          <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__inner">
+  
+              <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="66" viewBox="0 0 77 66">
+  
+                  <image width="77" height="66" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+                  
+                 
+              </div>
+  
+              <nav class="nav" id="nav">
+                <div class="nav__block">
+                  <a class="nav__link" href="#">НЕВРОЛОГИЯ</a>
+                  <a class="nav__link" href="#">ТЕХНОЛОГИИ</a>
+                  <a class="nav__link" href="#">ПРИМЕНЕНИЯ</a>
+                  <a class="nav__link" href="#">БЛОГ</a>
+                </div>
+               
+                  <div class="call__block">
+                    <a class="nav__btn"  href="tel:+380975366991">Консультация</a>
+                  </div>
+              </nav>
+  
+         
+          </div>
+      </div>
+  </header>
+      <div class="container">
+  
+          <div class="intro__inner">
+              <div class="intro__content">
+                  <h2 class="intro__title">Технологии
+                    диагностики <br>и <span>реабилитации</span></h2>
+  
+                <div class="intro__inner-subtitle">
+                  Методы обследований 
+                 <br>и лечения пациентов
+                </div>
+              </div>
+              <div class="intro__image">
+                <img src="img/eeg.png"  srcset="img/eeg.png 1x, img/eeg-2x.png 2x" alt="">
+              </div>
+  
+
+          </div><!-- /.intro__inner -->
+  
+      </div><!-- /.container -->
+  </section>
+  <section class="tech-main">
+    <div class="container">
+        <div class="tech">
+            <div class="tech__descr">
+                <div class="tech__descr-item">
+                  <h3 class="tech-title">Как работает Нейрофит 
+                  </h3>
+                     
+                      <p class="tech-text">Каждый раз, когда мы думаем, двигаемся или чувствуем,
+                        нейроны работают. Наш мозг генерирует огромное количество
+                        нейронной активности. В действительности, свою работу
+                        выполняют небольшие электрические сигналы, которые 
+                        передаются от нейрона к нейрону. 
+                        
+                       </p>
+                </div>
+                <div class="tech__descr-item">
+                  <h4 class="tech-subtitle">text</h4>
+                      <p class="tech-text">
+                        Без электроактивности мозга у вас бы не было 
+                        возможности читать эту статью.</p>
+                </div>
+                <div class="tech__descr-item">
+                  <h4 class="tech-subtitle">text?
+                      </h4>
+                     
+                      <p class="tech-text">Комплекс ТКМП и БОС-тренинг помогает улучшить связь нейронов, 
+                        повышая пластичность головного мозга, 
+                        осознанно концентрировать и переключать внимание, 
+                        а также способствует образованию новых связей, 
+                        что в свою очередь влияет на обучаемость,помогает в реабилитаци неврологических и 
+                        психологических расстройств.</p>
+                </div>
+                <div class="tech__descr-item">
+                  <h4 class="tech-subtitle">text?
+                      </h4>
+                    
+                      <p class="tech-text">В процессе ТКМП-процедуры
+                        возникает поляризация клеточной и синаптической
+                        мембран – сдвиг мембранного потенциала клеток
+                        предваряется запуском биохимических реакций, 
+                        способствующих оптимизации состояния нервной ткани, 
+                        повышая связь нейронов и пластичность головного мозга.
+                        В сочитании с ТКМП-терапией, БОС-тренинг
+                        влияет на развитие необходимых ритмов мозга, 
+                        что в свою очередь способствует 
+                        улучшения концентрации внимания и снижения
+                        импульсивности, улучшения поведения,
+                         а также нормализации ЭЭГ.</p>
+                </div>
+            
+            
+            </div>
+            <div class="tech__illustration">
+              <img src="img/tech-girl.jpg" srcset="img/tech-girl.jpg 1x, img/tech-girl-2x.jpg 2x" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tech-details">
+  <div class="container">
+    <div class="details">
+      <div class="details__left">
+        <div class="details__left-item">
+          <h3 class="details-title">text?</h3>
+             
+              <p class="tech-text">Каждый раз, когда мы думаем, двигаемся или чувствуем,
+                нейроны работают. Наш мозг генерирует огромное количество
+                нейронной активности. В действительности, свою работу
+                выполняют небольшие электрические сигналы, которые 
+                передаются от нейрона к нейрону. 
+                
+               </p>
+        </div>
+        <div class="details__left-picture">
+        
+          <img src="img/adult.jpg" srcset="img/adult.jpg 1x, img/adult-2x.jpg 2x" alt="">
+        </div>
+        <div class="details__left-item">
+          <h3 class="details-title">text?</h3>
+             
+              <p class="tech-text">Каждый раз, когда мы думаем, двигаемся или чувствуем,
+                нейроны работают. Наш мозг генерирует огромное количество
+                нейронной активности. В действительности, свою работу
+                выполняют небольшие электрические сигналы, которые 
+                передаются от нейрона к нейрону. 
+                
+               </p>
+        </div>
+        <div class="details__left-picture">
+        
+          <img src="img/pad.jpg" srcset="img/pad.jpg 1x, img/pad-2x.jpg 2x" alt="">
+        </div>
+      </div>
+      <div class="details__right">
+        <div class="details__right-item">
+          <h3 class="details-title">text?</h3>
+             
+              <p class="tech-text">Каждый раз, когда мы думаем, двигаемся или чувствуем,
+                нейроны работают. Наш мозг генерирует огромное количество
+                нейронной активности. В действительности, свою работу
+                выполняют небольшие электрические сигналы, которые 
+                передаются от нейрона к нейрону. 
+                
+               </p>
+        </div>
+        <div class="details__right-item">
+          <h4 class="details-subtitle">text</h4>
+              <p class="tech-text">
+                Без электроактивности мозга у вас бы не было 
+                возможности читать эту статью.</p>
+        </div>
+        <div class="details__right-item">
+          <h4 class="details-subtitle">text?
+              </h4>
+             
+              <p class="details-text">Комплекс ТКМП и БОС-тренинг помогает улучшить связь нейронов, 
+                повышая пластичность головного мозга, 
+                осознанно концентрировать и переключать внимание, 
+                а также способствует образованию новых связей, 
+                что в свою очередь влияет на обучаемость,помогает в реабилитаци неврологических и 
+                психологических расстройств.</p>
+        </div>
+        <div class="details__right-item--image">
+          <img src="img/eeg.jpg" srcset="img/eeg.jpg 1x, img/eeg-2x.jpg 2x" alt="">
+          <img src="img/tdcs.jpg" srcset="img/tdcs.jpg 1x, img/tdcs-2x.jpg 2x" alt="">
+        </div>
+       
+        <div class="details__right-item">
+          <h4 class="tech-subtitle">text?
+              </h4>
+            
+              <p class="details-text">В процессе ТКМП-процедуры
+                возникает поляризация клеточной и синаптической
+                мембран – сдвиг мембранного потенциала клеток
+                предваряется запуском биохимических реакций, 
+                способствующих оптимизации состояния нервной ткани, 
+                повышая связь нейронов и пластичность головного мозга.
+                В сочитании с ТКМП-терапией, БОС-тренинг
+                влияет на развитие необходимых ритмов мозга, 
+                что в свою очередь способствует 
+                улучшения концентрации внимания и снижения
+                импульсивности, улучшения поведения,
+                 а также нормализации ЭЭГ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tech-metodology">
+  <div class="container">
+    <div class="metodology">
+      
+      <div class="metodology__left">
+        <div class="metodology__left-item">
+          <h3 class="metodology-title">text?</h3>
+             
+              <p class="metodology-text">Методика БОС-ЭЭГ тренинга включает в себя снятие 
+                электроэнцефалограммы, которая регистрирует 
+                основные ритмы головного мозга 
+                (альфа-, бета-, дельта-, тетаритмы).
+                
+               </p>
+        </div>
+        <div class="metodology__left-item">
+          <h4 class="metodology-subtitle">text</h4>
+              <p class="tech-text">
+                Оценка ЭЭГ (электроэнцефалограммы) проводится опытным 
+                специалистом неврологом – нейрофизиологом, 
+                при этом дается заключение об особенностях 
+                мозговой ритмики и распределении биопотенциалов 
+                в различных зонах коры головного мозга. 
+                В зависимости от показаний, подбирается необходимый
+                курс БОС-ЭЭГ тренинга (расслабляющий, активирующий и т.д.).</p>
+        </div>
+        <div class="metodology__left-image">
+          <img src="img/biodeedback-soft.png"  srcset="img/biodeedback-soft.png 1x, img/biodeedback-soft-2x.png 2x" alt="">
+        </div>
+        <div class="metodology__left-item">
+          <h4 class="metodology-subtitle">text?
+              </h4>
+             
+              <p class="metodology-text">Подобно тому как, глядя в зеркало, человек можетперестать 
+                хмуриться, головной мозг,используя обратную связь, 
+                может скорректировать свое состояние.</p>
+        </div>
+        <div class="metodology__left-item">
+          <h4 class="metodology-subtitle">text?
+              </h4>
+            
+              <p class="metodology-text">Только граммотно поставленый рецепт процедур гарантирует 
+                прогрессв лечении таких расстройств как нарушения внимания,
+                тревожно-депрессивные расстройства,нарушения поведения,
+                тики и заикание,головные боли,нарушения сна, 
+                А также реабилитацияпосле черепно-мозговых травм, 
+                инсультов, тяжелых зависимостей</p>
+        </div>
+      </div>
+      <div class="metodology__right">
+        <div class="metodology__right-item">
+          <img src="img/soft.jpg" srcset="img/soft.jpg 1x, img/soft-2x.jpg 2x" alt="">
+
+        </div>
+        <div class="metodology__right-item">
+          <img src="img/mitsar.png" srcset="img/mitsar.png 1x, img/mitsar-2x.png 2x" alt="">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-more">
+  <div class="container">
+    <h3>Другие тренинги</h3>
+    <ul>
+      <li class="animated-list">
+        <input type="checkbox" checked>
+        <i></i>
+        <h4>Тренинг для спортсменов</h4>
+        <div class="list-wrapper">
+          <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+          <img src="img/sportsmen.jpg" srcset="img/sportsmen.jpg 1x, img/sportsmen" alt="">
+           
+        </div>
+       </li>
+      <li class="animated-list">
+        <input type="checkbox" checked>
+        <i></i>
+        <h4>Поддерживающие тренировки для людей в возрасте</h4>
+        <div class="list-wrapper">
+          <img src="img/older-people.jpg" srcset="img/older-people.jpg 1x, img/older-people-2x.jpg 2x" alt="">
+
+          <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+           
+        </div>
+      </li>
+      <li class="animated-list">
+        <input type="checkbox" checked>
+        <i></i>
+        <h4>Тренировки для творческих профессий</h4>
+        <div class="list-wrapper">
+          <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+          <img src="img/artist-eeg.jpg" srcset="img/artist-eeg.jpg 1x, img/artist-eeg-2x.jpg 2x" alt="">
+           
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__form-wrapper">
+        <span>Мы свяжемся с вами в течении 10 минут</span>
+        <form action="footer-form-page" class="footer__form" method="post">
+          <ul class="footer__form-inner">
+            <li class="footer__form-item">
+              <input type="text" id="name" name="user_name" placeholder="Ваше имя">
+            </li>
+            <li class="footer__form-item">
+              <input type="text" id="phone" name="user_phone" placeholder="Email">
+            </li>
+            <li class="footer__form-item">
+              <input type="email" id="mail" name="user_mail" placeholder="Ваш телефон">
+            </li>
+            <li class="footer__form-item">
+              <textarea id="msg" name="user_message" placeholder="Задать вопрос"></textarea>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="footer__subscribe">
+        <nav>
+          <div class="nav__block">
+            <a class="nav__link" href="#">НЕВРОЛОГИЯ</a>
+            <a class="nav__link" href="#">ТЕХНОЛОГИИ</a>
+            <a class="nav__link" href="#">ПРИМЕНЕНИЯ</a>
+            <a class="nav__link" href="#">БЛОГ</a>
+          </div>
+        </nav>
+        <div class="subscribe__form-wrapper">
+          <form action="" class="subscribe-form">
+            <label for="subscribe"></label>
+            <input id="subscribe" type="text" placeholder="Введите email для подписки на новости">
+            
+          </form>
+          <a href="tel:+380975366991">+38097&nbsp;536&nbsp;69&nbsp;91</a>
+          <a href="tel:+380975366991">+38097&nbsp;536&nbsp;69&nbsp;91</a>
+        </div>
+        <div class="footer-info">
+          <div class="footer-copyright"><small>&copy;NeuroFit 2020 все права защищены</small></div>
+
+          <div class="footer-social">
+            <a href="#"><svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="23px" height="17px">
+             <image  x="0px" y="0px" width="23px" height="17px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAARCAMAAAABrcePAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAz1BMVEX///+gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln3///9u4FUtAAAAQ3RSTlMAAGyur6qtsn0IGAzBGw+6LX/y+JQeouVBWOPqazDU9GAy0ddQ7fOEEb3EdKkVmJ+cynB2J8LiSVRF3fZmkEaO8Pt8zXBflQAAAAFiS0dEAIgFHUgAAAAHdElNRQfkCxECCRgfXgWuAAAAnElEQVQY06XIxw6CABRE0fdEsCCKYkFFsWLvvQvz//8kIQaBsPNuZnKIEkJSDCel0hnKyhKi5ZQ8FVQqlkKqlalSJdR0qjcC3DS41QaZ0Drc7fnc13kwhEmW+0c8nnx5qvDMHctzzBe89HjF8ho/x0blrQVzx/sDgo7jiQfCmS9XhB03g5nvJqIOPJ4v/wcdb8Q7/nE71m1yxLicD7aBTGHvexH6AAAAAElFTkSuQmCC" />
+             </svg>
+            </a>
+            <a href="#"><svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="11px" height="23px">
+             <image  x="0px" y="0px" width="11px" height="23px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAXCAQAAAB3sX1NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCxECCQ7rirD/AAAAzElEQVQoz83RoU4DQRAG4G+vF65J05BgkOARDbKKBAyS8AQIXgDVIHG910ATbAWmDoEj4QEaBMGcoEDFJV3EbkoDPAC/mnzZnZlkQgR1x9CFoT6mzkuog1PXulL6igLsulwhrViCPfuZZh7dWSTeyvjpbDSF1CRkfjJLReJ55ugtFWV9ZL7qvOmwftaxEcZRo6cCSwutymu5NpBCD0wKf+W2dIWBE/DiRqPxECLqYxNw72DUfi+4nT9Xdtb3/pX/xuHno3Sd1jv4sEz8BdkeLQBZJeXKAAAAAElFTkSuQmCC" />
+             </svg>
+            </a>
+            <a href="#"><svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px" height="24px">
+             <image  x="0px" y="0px" width="24px" height="24px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAV1BMVEX///+gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln2gln3///8Ov/tnAAAAG3RSTlMAAA55sudH4vXgni0DWQhkESteRErliP67gkLsi7LxAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+QLEQIJJDAxeSkAAAC7SURBVCjPjZLbEoMgDEQjiHjBWlAE2f//zxqtjq1lpvtGzpDLJkREQpYKp1QpBW2qNFA3p2pAV1scaDtTnDJdC6xEaPTFl3poQRItfUQfw5NaSCrR7cBY5+yacsRAHUpStdnA5LklPxVmfJCpFaEhBjNCXJYYMK8PogZvMMEn/pc8piswPqS9dAreXIBFPJqKsBfgsBxggfsHZFNli2fb/TXgzRIGbMnNRAZs4s12Bmx7dlHZ1eaPIXM+L0hfFUfftyCCAAAAAElFTkSuQmCC" />
+             </svg>
+            
+            
+            </a>
+          </div>
+
+            <div class="footer-logo">  
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="66" viewBox="0 0 180 66">
+    
+              <image id="Fit" width="180" height="66" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              
+            </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

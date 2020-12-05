@@ -1,0 +1,1 @@
+.chapters{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -1rem 2.8rem}.chapter__col{-ms-flex-preferred-size:33.33333%;flex-basis:33.33333%;padding:1rem}@media (max-width: 767px){.chapter__col{-ms-flex-preferred-size:50%;flex-basis:50%}}@media (max-width: 565px){.chapter__col{-ms-flex-preferred-size:100%;flex-basis:100%}}

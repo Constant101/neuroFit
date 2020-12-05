@@ -1,0 +1,74 @@
+// main: ../style.less
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+.tech-metodology {
+  position: relative;
+  padding: 40px 0;
+
+  .metodology {
+    display: flex;
+    justify-content: space-between;
+
+    &__right {
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-item {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 40px 0;
+        position: relative;
+        &:last-child {
+          padding: 40px 0 0 0;
+          &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: $black;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+      img {
+        max-width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: $black;
+        left: 0;
+        top: 0;
+      }
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      padding-right: 60px;
+      width: 50%;
+      &-item {
+        margin-bottom: 30px;
+      }
+      &-image {
+        display: flex;
+        align-items: flex-end;
+        img {
+          max-width: 100%;
+          bottom: 0px;
+          position: relative;
+        }
+      }
+    }
+  }
+}

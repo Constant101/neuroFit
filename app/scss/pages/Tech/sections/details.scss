@@ -1,0 +1,95 @@
+// main: ../style.less
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+.tech-details {
+  .details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $black;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__left {
+      padding-right: 60px;
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-item {
+        margin-bottom: 20px;
+      }
+
+      &-picture {
+        display: flex;
+        align-items: flex-end;
+
+        img {
+          max-width: 80%;
+          bottom: 0px;
+          position: relative;
+        }
+      }
+    }
+    &__right {
+      padding-left: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      width: 50%;
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: $black;
+        left: 0;
+        top: 0;
+      }
+
+      &-item {
+        margin-bottom: 30px;
+        img {
+          max-width: 100%;
+          bottom: 0px;
+          position: relative;
+        }
+      }
+      &-item--image {
+        display: flex;
+        img {
+          width: 50%;
+          position: relative;
+          &:last-child {
+            padding-left: 20px;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: $black;
+            left: 0;
+            top: 0;
+          }
+          &:first-child {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

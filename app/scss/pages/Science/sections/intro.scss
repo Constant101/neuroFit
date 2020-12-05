@@ -1,0 +1,78 @@
+@import '../../../vars';
+@import '../../../libs';
+@import '../../../fonts';
+
+.intro-science {
+  overflow: hidden;
+  background-color: $science;
+}
+
+.intro__inner {
+  display: flex;
+  padding-top: 2rem;
+  padding: 2rem 0 3rem 0;
+  position: relative;
+  z-index: 2;
+
+  .intro__content {
+    width: 40%;
+    padding-top: 120px;
+    .intro__title {
+      // margin-bottom: 5px;
+      // font-size: 2.7rem;
+      // color: $green;
+      // font-weight: 700;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .intro__image {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      width: 60%;
+      position: relative;
+    }
+  }
+  .borderline {
+    animation: borderline 1s ease both;
+  }
+  .transition {
+    transition: all 0.25s ease-in-out;
+  }
+  &-subtitle {
+    z-index: 2;
+    padding: 30px 60px 60px 0;
+    // border-top: 2px solid $green;
+    color: $green;
+    font-size: 20px;
+    position: relative;
+    line-height: 1.6;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: $green;
+      top: 0;
+      left: 0;
+      @extend .borderline;
+      @extend .transition;
+    }
+  }
+}
+
+@keyframes borderline {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*amination*/
